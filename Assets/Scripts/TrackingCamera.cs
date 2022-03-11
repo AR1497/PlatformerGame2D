@@ -2,7 +2,6 @@ using UnityEngine;
 
 public class TrackingCamera : MonoBehaviour
 {
-    [SerializeField]
     private Transform _target;
     private Vector3 _offset;
 
