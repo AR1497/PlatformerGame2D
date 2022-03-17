@@ -14,7 +14,7 @@ internal class VictoryZone : MonoBehaviour
     {
         if (other.GetComponent<CharacterView>())
         {
-            Destroy(other.gameObject, 0.5f);
+            other.gameObject.SetActive(false);
             gameVictory.SetActive(true);
         }
     }

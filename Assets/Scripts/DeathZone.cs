@@ -13,7 +13,7 @@ internal class DeathZone : MonoBehaviour
     {
         if (other.GetComponent<CharacterView>())
         {
-            Destroy(other.gameObject);
+            other.gameObject.SetActive(false);
             gameOver.SetActive(true);
         }
     }

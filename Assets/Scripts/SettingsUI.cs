@@ -16,4 +16,9 @@ public class SettingsUI : MonoBehaviour
     {
         SceneManager.LoadScene("SampleScene");
     }
+
+    public void NextLevel()
+    {
+
+    }
 }
