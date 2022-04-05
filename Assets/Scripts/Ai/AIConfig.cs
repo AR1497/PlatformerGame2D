@@ -4,7 +4,7 @@ using UnityEngine;
 [Serializable]
 public struct AIConfig
 {
-    public float _speed;
-    public float _minDistanceToTarget;
+    public float Speed;
+    public float MinDistanceToTarget;
     public Transform[] WayPoints;
 }
