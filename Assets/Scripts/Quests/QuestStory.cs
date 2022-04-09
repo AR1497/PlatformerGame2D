@@ -24,7 +24,7 @@ public class QuestStory : IQuestStory
     {
         foreach(var quest in _questsCollection)
         {
-            quest.Completed -= OnQuestCompleted;
+            quest.Completed += OnQuestCompleted;
         }
     }
 
@@ -32,7 +32,7 @@ public class QuestStory : IQuestStory
     {
         foreach (var quest in _questsCollection)
         {
-            quest.Completed += OnQuestCompleted;
+            quest.Completed -= OnQuestCompleted;
         }
     }
 
@@ -46,7 +46,7 @@ public class QuestStory : IQuestStory
         }
         else
         {
-            ResetQuest(index++);
+            ResetQuest(++index);
         }
     }
 
